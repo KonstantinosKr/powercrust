@@ -1,0 +1,2 @@
+/Users/konstantinos/Devel/powercrust/build/CMakeFiles/construct.dir
+/Users/konstantinos/Devel/powercrust/build/CMakeFiles/powercrust.dir
