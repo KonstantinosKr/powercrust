@@ -15,7 +15,19 @@ vtkSmartPointer.h
 /Users/konstantinos/Devel/powercrust/vtkSmartPointer.h
 vtkPolyDataWriter.h
 /Users/konstantinos/Devel/powercrust/vtkPolyDataWriter.h
+vtkAppendFilter.h
+/Users/konstantinos/Devel/powercrust/vtkAppendFilter.h
+vtkUnstructuredGrid.h
+/Users/konstantinos/Devel/powercrust/vtkUnstructuredGrid.h
+vtkUnstructuredGridWriter.h
+/Users/konstantinos/Devel/powercrust/vtkUnstructuredGridWriter.h
+vtkTriangleFilter.h
+/Users/konstantinos/Devel/powercrust/vtkTriangleFilter.h
 sstream
+-
+stdlib.h
+-
+time.h
 -
 
 /Users/konstantinos/Devel/powercrust/powercrust.h
@@ -47,6 +59,12 @@ vtkCommonExecutionModelModule.h
 /opt/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 vtkObject.h
 /opt/local/include/vtk-6.3/vtkObject.h
+
+/opt/local/include/vtk-6.3/vtkAppendFilter.h
+vtkFiltersCoreModule.h
+/opt/local/include/vtk-6.3/vtkFiltersCoreModule.h
+vtkUnstructuredGridAlgorithm.h
+/opt/local/include/vtk-6.3/vtkUnstructuredGridAlgorithm.h
 
 /opt/local/include/vtk-6.3/vtkArrayIterator.h
 vtkCommonCoreModule.h
@@ -233,6 +251,10 @@ vtkCommonCoreModule.h
 /opt/local/include/vtk-6.3/vtkCommonCoreModule.h
 vtkSystemIncludes.h
 /opt/local/include/vtk-6.3/vtkSystemIncludes.h
+
+/opt/local/include/vtk-6.3/vtkFiltersCoreModule.h
+vtkAutoInit.h
+/opt/local/include/vtk-6.3/vtkAutoInit.h
 
 /opt/local/include/vtk-6.3/vtkIOCoreModule.h
 
@@ -478,6 +500,12 @@ vtkCommonCoreModule.h
 vtkSystemIncludes.h
 /opt/local/include/vtk-6.3/vtkSystemIncludes.h
 
+/opt/local/include/vtk-6.3/vtkTriangleFilter.h
+vtkFiltersCoreModule.h
+/opt/local/include/vtk-6.3/vtkFiltersCoreModule.h
+vtkPolyDataAlgorithm.h
+/opt/local/include/vtk-6.3/vtkPolyDataAlgorithm.h
+
 /opt/local/include/vtk-6.3/vtkType.h
 vtkConfigure.h
 /opt/local/include/vtk-6.3/vtkConfigure.h
@@ -535,6 +563,30 @@ vtkDataArray.h
 /opt/local/include/vtk-6.3/vtkDataArray.h
 vtkDataArrayTemplate.h
 /opt/local/include/vtk-6.3/vtkDataArrayTemplate.h
+
+/opt/local/include/vtk-6.3/vtkUnstructuredGrid.h
+vtkCommonDataModelModule.h
+/opt/local/include/vtk-6.3/vtkCommonDataModelModule.h
+vtkUnstructuredGridBase.h
+/opt/local/include/vtk-6.3/vtkUnstructuredGridBase.h
+
+/opt/local/include/vtk-6.3/vtkUnstructuredGridAlgorithm.h
+vtkCommonExecutionModelModule.h
+/opt/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
+vtkAlgorithm.h
+/opt/local/include/vtk-6.3/vtkAlgorithm.h
+
+/opt/local/include/vtk-6.3/vtkUnstructuredGridBase.h
+vtkCommonDataModelModule.h
+/opt/local/include/vtk-6.3/vtkCommonDataModelModule.h
+vtkPointSet.h
+/opt/local/include/vtk-6.3/vtkPointSet.h
+
+/opt/local/include/vtk-6.3/vtkUnstructuredGridWriter.h
+vtkIOLegacyModule.h
+/opt/local/include/vtk-6.3/vtkIOLegacyModule.h
+vtkDataWriter.h
+/opt/local/include/vtk-6.3/vtkDataWriter.h
 
 /opt/local/include/vtk-6.3/vtkVariant.h
 vtkCommonCoreModule.h

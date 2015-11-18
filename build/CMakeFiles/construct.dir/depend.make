@@ -7,6 +7,7 @@ CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkABI.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkAbstractArray.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkAbstractPolyDataReader.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkAlgorithm.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkAppendFilter.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkArrayIterator.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkArrayIteratorTemplate.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkArrayIteratorTemplate.txx
@@ -32,6 +33,7 @@ CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkDataObje
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkDataSet.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkDataWriter.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkDebugLeaksManager.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkFiltersCoreModule.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkIOCoreModule.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkIOGeometryModule.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkIOLegacyModule.h
@@ -66,6 +68,7 @@ CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkSortData
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkStdString.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkSystemIncludes.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTimeStamp.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTriangleFilter.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkType.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTypeTemplate.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTypeTraits.h
@@ -74,6 +77,10 @@ CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTypedDat
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkTypedDataArrayIterator.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnicodeString.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnsignedCharArray.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnstructuredGrid.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnstructuredGridAlgorithm.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnstructuredGridBase.h
+CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkUnstructuredGridWriter.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkVariant.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkVariantCast.h
 CMakeFiles/construct.dir/construct.cpp.o: /opt/local/include/vtk-6.3/vtkVariantInlineOperators.h

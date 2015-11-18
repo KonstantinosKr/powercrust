@@ -22,10 +22,16 @@
 #include "vtkPLYReader.h"
 #include "vtkSmartPointer.h"
 #include "vtkPolyDataWriter.h"
+#include "vtkAppendFilter.h"
+#include "vtkUnstructuredGrid.h"
+#include "vtkUnstructuredGridWriter.h"
+#include "vtkTriangleFilter.h"
 #include <sstream>
+#include <stdlib.h>
+#include <time.h>
 
-#define nparticles 1000
-#define rad 10.0
+#define nparticles 500000 //500,000
+#define rad 5.0
 #define pts 200
 
 int main ( int argc, char** argv )
@@ -34,13 +40,10 @@ int main ( int argc, char** argv )
   int n = nparticles;
   double radius = rad;
   
-  double x[npoints][n];
-  double y[npoints][n];
-  double z[npoints][n];
-  
-  srand(time(NULL));
   double p[3];
   vtkSmartPointer<vtkPoints> points = vtkSmartPointer<vtkPoints>::New();
+  
+  srand(time(NULL));
   
   for(int i = 0; i<n; i++)
   {
@@ -49,18 +52,15 @@ int main ( int argc, char** argv )
       const double eps = 0.25;
       double rng1 = 0;
       double rng2 = 360;
-      double phi = (rng2-rng1) * drand48() + rng1;
-      double theta = (rng2-rng1) * drand48() + rng1;
+      double phi = (rng2-rng1) * (drand48()) + rng1;
+      double theta = (rng2-rng1) * (drand48()) + rng1;
       double myradius = ((drand48()*eps)+1.0-eps) * radius;
       
-      x[j][i] = myradius*sin(phi) * cos(theta);
-      y[j][i] = myradius*sin(phi) * sin(theta);
-      z[j][i] = myradius*cos(phi);
+      p[0] = myradius*sin(phi) * cos(theta);
+      p[1] = myradius*sin(phi) * sin(theta);
+      p[2] = myradius*cos(phi);
       
-      p[0] = x[j][i];
-      p[1] = y[j][i];
-      p[2] = z[j][i];
-      points->InsertPoint(i,p);
+      points->InsertPoint(j,p);
       //std::cout << p[0] << ' ' << p[1] << ' ' << p[2] << std::endl;
     }
 
@@ -71,17 +71,34 @@ int main ( int argc, char** argv )
     reconstruct->SetInputData( dataSet );
     reconstruct->Update();
     
+    vtkSmartPointer<vtkTriangleFilter> triFilter = vtkSmartPointer<vtkTriangleFilter>::New();
+    triFilter->SetInputConnection(reconstruct->GetOutputPort());
+    triFilter->Update();
+
+    vtkSmartPointer<vtkAppendFilter> appendFilter = vtkSmartPointer<vtkAppendFilter>::New();
+    appendFilter->AddInputData(triFilter->GetOutput());
+    appendFilter->Update();
+
+    vtkSmartPointer<vtkUnstructuredGrid> unstructuredGrid = vtkSmartPointer<vtkUnstructuredGrid>::New();
+    unstructuredGrid->ShallowCopy(appendFilter->GetOutput());
+    
     std::string OutFileName = "particles/par_";
     std::ostringstream convert;
     convert << i;
     OutFileName.append ( convert.str() );
     OutFileName.append ( ".vtk" );
     std::cout << "Writing: " << OutFileName << std::endl;
-    
-    vtkSmartPointer<vtkPolyDataWriter> vtkwriter = vtkSmartPointer<vtkPolyDataWriter>::New();
+   
+    //Write the unstructured grid
+    vtkSmartPointer<vtkUnstructuredGridWriter> writer = vtkSmartPointer<vtkUnstructuredGridWriter>::New();
+    writer->SetInputData(unstructuredGrid);
+    writer->SetFileName(OutFileName.c_str());
+    writer->Write();
+
+    /*vtkSmartPointer<vtkPolyDataWriter> vtkwriter = vtkSmartPointer<vtkPolyDataWriter>::New();
     vtkwriter->SetInputData( reconstruct->GetOutput());
     vtkwriter->SetFileName(OutFileName.c_str());
-    vtkwriter->Write(); 
+    vtkwriter->Write();*/ 
   }
   return 0;
 }

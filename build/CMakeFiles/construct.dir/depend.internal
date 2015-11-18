@@ -8,6 +8,7 @@ CMakeFiles/construct.dir/construct.cpp.o
  /opt/local/include/vtk-6.3/vtkAbstractArray.h
  /opt/local/include/vtk-6.3/vtkAbstractPolyDataReader.h
  /opt/local/include/vtk-6.3/vtkAlgorithm.h
+ /opt/local/include/vtk-6.3/vtkAppendFilter.h
  /opt/local/include/vtk-6.3/vtkArrayIterator.h
  /opt/local/include/vtk-6.3/vtkArrayIteratorTemplate.h
  /opt/local/include/vtk-6.3/vtkArrayIteratorTemplate.txx
@@ -33,6 +34,7 @@ CMakeFiles/construct.dir/construct.cpp.o
  /opt/local/include/vtk-6.3/vtkDataSet.h
  /opt/local/include/vtk-6.3/vtkDataWriter.h
  /opt/local/include/vtk-6.3/vtkDebugLeaksManager.h
+ /opt/local/include/vtk-6.3/vtkFiltersCoreModule.h
  /opt/local/include/vtk-6.3/vtkIOCoreModule.h
  /opt/local/include/vtk-6.3/vtkIOGeometryModule.h
  /opt/local/include/vtk-6.3/vtkIOLegacyModule.h
@@ -67,6 +69,7 @@ CMakeFiles/construct.dir/construct.cpp.o
  /opt/local/include/vtk-6.3/vtkStdString.h
  /opt/local/include/vtk-6.3/vtkSystemIncludes.h
  /opt/local/include/vtk-6.3/vtkTimeStamp.h
+ /opt/local/include/vtk-6.3/vtkTriangleFilter.h
  /opt/local/include/vtk-6.3/vtkType.h
  /opt/local/include/vtk-6.3/vtkTypeTemplate.h
  /opt/local/include/vtk-6.3/vtkTypeTraits.h
@@ -75,6 +78,10 @@ CMakeFiles/construct.dir/construct.cpp.o
  /opt/local/include/vtk-6.3/vtkTypedDataArrayIterator.h
  /opt/local/include/vtk-6.3/vtkUnicodeString.h
  /opt/local/include/vtk-6.3/vtkUnsignedCharArray.h
+ /opt/local/include/vtk-6.3/vtkUnstructuredGrid.h
+ /opt/local/include/vtk-6.3/vtkUnstructuredGridAlgorithm.h
+ /opt/local/include/vtk-6.3/vtkUnstructuredGridBase.h
+ /opt/local/include/vtk-6.3/vtkUnstructuredGridWriter.h
  /opt/local/include/vtk-6.3/vtkVariant.h
  /opt/local/include/vtk-6.3/vtkVariantCast.h
  /opt/local/include/vtk-6.3/vtkVariantInlineOperators.h
